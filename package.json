@@ -1,0 +1,28 @@
+{
+  "name": "loaf-matter",
+  "version": "0.0.1",
+  "description": "A library to help you use matter.js",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loafjs/loaf-matter.git"
+  },
+  "engines": {
+    "node": ">=6.0.0"
+  },
+  "keywords": [
+    "matterjs",
+    "2D",
+    "physics"
+  ],
+  "author": "falsy",
+  "license": "MIT",
+  "bugs": "https://github.com/loafjs/loaf-matter/issues",
+  "homepage": "https://lab.falsy.me",
+  "dependencies": {
+    "matter-js": "^0.14.2"
+  }
+}
