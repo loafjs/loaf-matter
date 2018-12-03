@@ -12,7 +12,7 @@ const Constraint = Matter.Constraint;
 const Contact = Matter.Contact;
 const Detector = Matter.Detector;
 const Engine = Matter.Engine;
-const Event = Matter.Event;
+const Events = Matter.Events;
 const Grid = Matter.Grid;
 const Mouse = Matter.Mouse;
 const MouseConstraint = Matter.MouseConstraint;
@@ -81,8 +81,8 @@ class Core {
     return Engine;
   }
 
-  static get Event() {
-    return Event;
+  static get Events() {
+    return Events;
   }
 
   static get Grid() {

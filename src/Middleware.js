@@ -43,6 +43,13 @@ class Middleware extends Core {
     world.gravity.y = y;
   }
 
+  static event(name, callback) {
+    Core.Events.on(engine, name, callback);
+  }
+
+  static remove(body) {
+    Core.World.remove(world, body);
+  }
 
   static runEngine() {
     Core.Engine.run(engine);
