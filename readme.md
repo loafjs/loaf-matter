@@ -12,6 +12,7 @@ This is unstable because it is an early version.
 
 ## Install
 ```
+npm install --save matter-js
 npm install --save loaf-matter
 ```
 
