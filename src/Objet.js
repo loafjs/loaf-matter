@@ -59,9 +59,9 @@ class Objet extends Middleware {
     return this;
   }
 
-  ignoreGravity(boolean) {
+  ignoreGravity() {
+    const gravity = Middleware.gravity;
     Middleware.event('beforeUpdate', () => {
-      const gravity = Middleware.gravity;
       this.applyForce({x: 0, y:0}, {
         x: -gravity.x * gravity.scale * this.body.mass,
         y: -gravity.y * gravity.scale * this.body.mass

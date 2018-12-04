@@ -1,6 +1,6 @@
 {
   "name": "loaf-matter",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A library to help you use matter.js",
   "main": "index.js",
   "scripts": {
