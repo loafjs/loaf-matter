@@ -31,32 +31,40 @@ class Middleware extends Core {
   static setEngine(props) {
     engine = Core.Engine.create(props);
     world = engine.world;
+    return this;
   }
 
   static setRender(props) {
     render = Core.Render.create(props);
     canvas = render.canvas;
+    return this;
   }
 
-  static setGravity(x, y) {
-    world.gravity.x = x;
-    world.gravity.y = y;
+  static setGravity(x, y, scale) {
+    if(x) world.gravity.x = x;
+    if(y) world.gravity.y = y;
+    if(scale) world.gravity.scale = sacle;
+    return this;
   }
 
   static event(name, callback) {
     Core.Events.on(engine, name, callback);
+    return this;
   }
 
   static remove(body) {
     Core.World.remove(world, body);
+    return this;
   }
 
   static runEngine() {
     Core.Engine.run(engine);
+    return this;
   }
 
   static runRender() {
     Core.Render.run(render);
+    return this;
   }
 
 }
