@@ -1,5 +1,5 @@
 # Loaf Matter [![npm](https://img.shields.io/npm/v/loaf-matter.svg)](https://www.npmjs.com/package/loaf-matter) [![npm](https://img.shields.io/npm/dm/loaf-matter.svg)](https://www.npmjs.com/package/loaf-matter)
-A library to help you use [matter.js](http://brm.io/matter-js/). it is based on using one world and one engine.  
+A library to help you use [matter.js](http://brm.io/matter-js/). this is based on using one world and one engine.  
 I currently use Webpack, Babel, React. you do not need to use React, but you should use Webpack and Babel.
 
 ## Notice
