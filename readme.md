@@ -79,12 +79,11 @@ LM.runRender();
 
 ## Shape class definition
 By default, you can inherit the defined classes.
-
 ```js
-// ./ChildFigure.js
+// ./ChildObjet.js
 import LM, { Objet } from '../libs/loaf-matter';
 
-class ChildFigure extends Objet {
+class ChildObjet extends Objet {
 
   constructor(...props) {
     super(...props);
@@ -95,13 +94,44 @@ class ChildFigure extends Objet {
   }
 }
 
-export default ChildFigure
+export default ChildObjet
 ```
 ```js
 import ChildFigure from './ChildFigure';
 
-const newFigure = new ChildFigure('rectangle', [100, 100, 30, 30]);
-newFigure.show();
+const newObjet = new ChildFigure('rectangle', [100, 100, 30, 30]);
+newObjet.show();
 ```
 Here, `this.setVelocity()` functions as `Matter.Body.setVelocity(body, vertices)`.  
 link. http://brm.io/matter-js/docs/classes/Body.html#method_setVelocity
+
+## Add Methods
+### 1. addObjet()  
+Create an Objet that inherits a few methods.  
+For example, you can add an Objet to World with the included show method.  
+```js
+import LM from 'loaf-matter';
+
+const circle = LM.addObjet('circle', [100, 100, 20]);
+circle.show();
+```
+
+### 2. ignoreGravity()  
+Let the individual Objet ignore gravity.  
+For example, 'circle' falls under the influence of gravity, 'ignoreGravitycircle' is not affected by its gravity and will remain in place.
+```js
+import LM from '../libs/loaf-matter';
+
+LM.setEngine();
+LM.setGravity(0, 0.3);
+
+...
+
+const circle = LM.addObjet('circle', [200, 200, 20]);
+circle.show();
+
+const ignoreGravitycircle = LM.addObjet('circle', [100, 100, 20]);
+ignoreGravitycircle.show();
+ignoreGravitycircle.ignoreGravity();
+```
+

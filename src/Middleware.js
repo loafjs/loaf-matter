@@ -25,7 +25,7 @@ class Middleware extends Core {
   }
 
   static get gravity() {
-    return { x: world.gravity.x, y: world.gravity.y };
+    return { x: world.gravity.x, y: world.gravity.y, scale: world.gravity.scale };
   }
 
   static setEngine(props) {
