@@ -81,7 +81,7 @@ LM.runRender();
 By default, you can inherit the defined classes.
 ```js
 // ./ChildObjet.js
-import LM, { Objet } from '../libs/loaf-matter';
+import LM, { Objet } from 'loaf-matter';
 
 class ChildObjet extends Objet {
 
@@ -120,7 +120,7 @@ circle.show();
 Let the individual Objet ignore gravity.  
 For example, 'circle' falls under the influence of gravity, 'ignoreGravitycircle' is not affected by its gravity and will remain in place.
 ```js
-import LM from '../libs/loaf-matter';
+import LM from 'loaf-matter';
 
 LM.setEngine();
 LM.setGravity(0, 0.3);
