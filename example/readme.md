@@ -6,7 +6,7 @@ A simple example code. Use 'Webpack' and 'Babel'.
 npm install
 ```
 
-## Run
+## Start
 ```
 npm start
 ```
