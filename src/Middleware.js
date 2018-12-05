@@ -41,9 +41,9 @@ class Middleware extends Core {
   }
 
   static setGravity(x, y, scale) {
-    if(x) world.gravity.x = x;
-    if(y) world.gravity.y = y;
-    if(scale) world.gravity.scale = sacle;
+    if(x === 0 || x) world.gravity.x = x;
+    if(y === 0 || y) world.gravity.y = y;
+    if(scale === 0 || scale) world.gravity.scale = sacle;
     return this;
   }
 

@@ -23,19 +23,9 @@ class Objet extends Middleware {
   }
 
   setPosition(x, y) {
-    if(x && y) Middleware.Body.setPosition(this.body, {x, y});
-    else if(x) Middleware.Body.setPosition(this.body, {x, y: this.position.y});
-    else if(y) Middleware.Body.setPosition(this.body, {x: this.position.x, y});
-    return this;
-  }
-
-  setPositionX(x) {
-    Middleware.Body.setPosition(this.body, {x, y: this.position.y});
-    return this;
-  }
-
-  setPositionY(y) {
-    Middleware.Body.setPosition(this.body, {x: this.position.x, y});
+    if((x === 0 || x) && (y === 0 || y)) Middleware.Body.setPosition(this.body, {x, y});
+    else if(x === 0 || x) Middleware.Body.setPosition(this.body, {x, y: this.position.y});
+    else if(y === 0 || y) Middleware.Body.setPosition(this.body, {x: this.position.x, y});
     return this;
   }
 
