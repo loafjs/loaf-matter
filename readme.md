@@ -3,7 +3,8 @@ A library to help you use [matter.js](http://brm.io/matter-js/). this is based o
 I currently use Webpack, Babel, React. you do not need to use React, but you should use Webpack and Babel.
 
 ## Notice
-This is unstable because it is an early version.
+This is unstable because it is an early version.  
+There are many disadvantages. I look forward to intellectual and code review. Thank you.
 
 ## Required
 * [Matter.js](http://brm.io/matter-js/)
@@ -149,3 +150,5 @@ ignoreGravitycircle.show();
 ignoreGravitycircle.ignoreGravity();
 ```
 
+## License
+[MIT](https://github.com/loafjs/loaf-matter/blob/master/LICENSE)
